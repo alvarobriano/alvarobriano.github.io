@@ -81,6 +81,7 @@
 			ctx.fillRect(340, 0, 3, 250);
 			ctx.fillRect(0, 250, 100, 3);
 			ctx.fillRect(310, 0, 3, 250);
+			ctx.mozDrawText("Perdiste");
 			
 			function cambioColor(estadoB) {
 				if (estadoB == 1) {
@@ -121,7 +122,7 @@
 						}
 					}
 
-					if ((340 == X)&&(250 < Y)) {
+					if ((340 == X)) {
 						ctx.mozDrawText("Perdiste");
 					}
 					
