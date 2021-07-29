@@ -81,7 +81,7 @@
 			ctx.fillRect(340, 0, 3, 250);
 			ctx.fillRect(0, 250, 100, 3);
 			ctx.fillRect(310, 0, 3, 250);
-			ctx.fillText("PERDISTE",250,250);
+			
 			
 			function cambioColor(estadoB) {
 				if (estadoB == 1) {
@@ -122,9 +122,9 @@
 						}
 					}
 
-					/*if ((340 == X)) {
-						ctx.mozDrawText("Perdiste");
-					}*/
+					if ((340 == X)) {
+						ctx.fillText("PERDISTE",250,250);
+					}
 					
 					ctx.fillStyle = Color[indice];
 					ctx.beginPath();
