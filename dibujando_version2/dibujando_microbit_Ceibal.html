@@ -121,14 +121,6 @@
 						if (X > W) {
 							X = W;
 						} 
-						if (X > 0.25*canvas.width) {
-								if (X < 0.27*canvas.width){
-									if (Y < 0.75*canvas.height) {
-										ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR", 250, 250);
-										}
-									}
-								}
-						}
 						else {
 							X = X + x * 10;			
 							}
@@ -143,6 +135,15 @@
 							Y = Y + y * 10;
 						}
 					}
+
+					if (X > 0.25*canvas.width) {
+							if (X < 0.27*canvas.width){
+								if (Y < 0.75*canvas.height) {
+									ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR", 250, 250);
+									}
+								}
+							}
+						}
 				
 					ctx.fillStyle = Color[indice];
 					ctx.beginPath();
