@@ -128,6 +128,12 @@
 						} 
 					}
 
+					if ((Y > (0.25*canvas.height - 15)) && (Y < (0.25*canvas.height + 15)) && (X < (0.1*canvas.width + 15))){
+							ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR",250,250);
+							toco = 1;
+					}
+
+
 					if ((X > (0.1*canvas.width - 15)) && (X < (0.1*canvas.width + 15)) && (Y > (0.25*canvas.height - 15)) && (Y < ((0.25*canvas.height + 0.1*canvas.width) + 15))){
 							ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR",250,250);
 							toco = 1;
