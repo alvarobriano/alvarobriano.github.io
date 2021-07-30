@@ -121,13 +121,11 @@
 						if (X > W) {
 							X = W;
 						} else {
+							X = X + x * 10;
 							if (X == 0.25*W) {
 								if (Y < 0.75*H) {
 									ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR", 250, 250);
-								}
-								else {
-									X = X + x * 10;
-								}
+									}
 								}			
 							}
 						}
