@@ -78,10 +78,15 @@
 			var ctx = canvas.getContext("2d");
 			ctx.fillStyle = "Black";
 
-			ctx.fillRect(340, 0, 3, 250);
-			ctx.fillRect(0, 250, 100, 3);
-			ctx.fillRect(310, 0, 3, 250);
+			function pared(W,H){
+
+				ctx.fillRect(0.5*H, 0, 3, 0.8*W);
+				ctx.fillRect(0.8*W, 0.9*H, 100, 3);
+				ctx.fillRect(310, 0, 3, 250);
+
+			}
 			
+			pared(canvasWidth, canvasHeight);
 			
 			function cambioColor(estadoB) {
 				if (estadoB == 1) {
