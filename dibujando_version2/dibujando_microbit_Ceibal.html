@@ -104,8 +104,6 @@
 			
 			var counter = 0;
 			function dibujar(x, y, z) {
-				W = canvas.width;
-				H = canvas.height;
 
 				const samples = 10;
 				if (counter == 0) {
@@ -169,6 +167,8 @@
 			document.getElementById("clear").onclick = async () => {
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
 				relleno(canvasWidth, canvasHeight);
+				X = 0;
+				Y = 0;
 			}
 			
 			document.getElementById("find").onclick = async () => {
