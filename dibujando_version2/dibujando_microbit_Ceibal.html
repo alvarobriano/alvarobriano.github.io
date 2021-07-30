@@ -133,7 +133,15 @@
 						}*/
 					}
 
-					if ((X > (0.25*canvas.width - 15)) && (X < (0.25*canvas.width + 15)) && (Y < 0.75*canvas.height)){
+					if ((X > (0.25*canvas.width - 15)) && (X < (0.25*canvas.width + 15)) && (Y < (0.75*canvas.height + 15))){
+							ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR",250,250);
+					}
+					else {
+						Y = Y + y * 10;
+						X = X + x * 10;
+					}
+
+					if ((X > (0.4*canvas.width - 15)) && (X < (0.6*canvas.width + 15)) && (Y > (0.2*canvas.height - 15)) && (Y < (0.8*canvas.height + 15))){
 							ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR",250,250);
 					}
 					else {
