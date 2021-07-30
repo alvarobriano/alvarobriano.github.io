@@ -122,9 +122,9 @@
 							X = W;
 						} else {
 							X = X + x * 10;
-							if (X > 0.25*W) {
-								if (X < 0.27*W){
-									if (Y < 0.75*H) {
+							if (X > 0.25*canvas.width) {
+								if (X < 0.27*canvas.width){
+									if (Y < 0.75*canvas.height) {
 										ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR", 250, 250);
 										}
 									}
