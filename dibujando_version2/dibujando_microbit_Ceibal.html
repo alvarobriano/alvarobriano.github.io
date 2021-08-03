@@ -62,7 +62,6 @@
 				</div>
 				<div style="display:flex; flex-direction:column; flex-basis:100%; flex:3; align-items:center">
 					<canvas id="drawingCanvas" style="border:4px solid black"></canvas>
-					<img id="labcom" src="img/laberinto 01-01-01.png">
 				</div>
 				<div style="display:flex, flex-directon:column; flex-basis:100%; flex:1; align-items:center">
 				</div>
@@ -70,7 +69,8 @@
 		</div>
 		<script>
 			var canvas = document.getElementById("drawingCanvas");
-			var img = document.getElementById('labcom');
+			var img = new Image();
+			img.src = "img/laberinto 01-01-01.png";
 			
 			canvasWidth = 0.6 * (window.innerWidth);
 			canvasHeight = 0.6 * (window.innerHeight);
