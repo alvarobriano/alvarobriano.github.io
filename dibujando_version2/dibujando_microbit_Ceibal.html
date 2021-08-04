@@ -36,7 +36,7 @@
 			</div>
 			<div style="display:flex; flex-direction:row; flex-wrap:wrap; width:100%; align-items:center">
 				<div style="display:flex; flex-direction:column; flex-basis:100%; flex:2; align-items:center">
-					<text style="font-size:25px">Presiona el botón A para avanzar y el botón B para cambiar de color</text>
+					<text style="font-size:25px; text-align: center;">Presiona el botón A para avanzar y el botón B para cambiar de color</text>
 				</div>
 				<div  class="button" style="display:flex; flex-direction:column; flex-basis:100%; flex:1; align-items:center">
 					<button id="clear" style="position: relative;
@@ -52,7 +52,14 @@
 												transition-duration: 0.4s;
 												text-decoration: none;
 												overflow: hidden;
-												cursor: pointer;">Reiniciar</button>
+												cursor: pointer;
+																								
+												hover{
+    											background-color: #4CAF50; /* Green */
+    											color: white;
+												}"
+
+												>Reiniciar</button>
 				</div>
 			</div>
 			<br/>
@@ -92,19 +99,6 @@
 			canvas.height = canvasHeight;
 			
 			var ctx = canvas.getContext("2d");
-
-/*			function relleno(W,H){
-				ctx.fillStyle = "Black";
-
-				ctx.fillRect(0, 0.25*H, 0.1*W, 4);
-				ctx.fillRect(0.1*W, 0.25*H, 4, 0.1*W);
-				ctx.fillRect(0.25*W, 0, 4, 0.75*H);
-				ctx.fillRect(0.1*W, 0.75*H, 0.15*W, 4);
-				ctx.fillRect(0.4*W, 0.2*H, 0.2*W, 0.6*H);
-				ctx.fillRect(0.5*W, 0.8*H, 4, 0.2*H);
-				ctx.fillRect(0.8*W, 0, 4, 0.7*H);
-
-			}*/
 			
 			ctx.drawImage(img, 0,0, canvasWidth, canvasHeight);
 			
@@ -233,7 +227,6 @@
 			document.getElementById("clear").onclick = async () => {
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
 				ctx.drawImage(img, 0,0, canvasWidth, canvasHeight);
-				//relleno(canvasWidth, canvasHeight);
 				X = 0;
 				Y = 0;
 				toco = 0;
