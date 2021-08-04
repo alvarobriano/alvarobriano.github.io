@@ -10,74 +10,30 @@ body{
 }
 
 .button {
-    display: block;
+    position: relative;
+    background-color: white;
+    border: 1 px;
+    border-radius: 8px;
+    border-color: #4CAF50;
+    font-size: 28px;
+    color: black;
+    padding: 20px;
+    width: 200px;
     text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
     cursor: pointer;
-    border: none;
-    .buttonSize(40px, 3px, 18px);
-    .transition(background-color, 0.2s);
-    .buttonColor(@default-background-color, @default-text-color);
+  }
   
-    &.button-primary {
-      .buttonColor(@primary-background-color, @primary-text-color);
-    }
-    &.button-info {
-      .buttonColor(@info-background-color, @info-text-color);
-    }
-    &.button-success {
-      .buttonColor(@success-background-color, @success-text-color);
-    }
-    &.button-warning {
-      .buttonColor(@warning-background-color, @warning-text-color);
-    }
-    &.button-danger {
-      .buttonColor(@danger-background-color, @danger-text-color);
-    }
-    &.button-inverse {
-      .buttonColor(@inverse-background-color, @inverse-text-color);
-    }
+  .button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
 
-    .button {
-        display: block;
-        text-align: center;
-        cursor: pointer;
-        border: none;
-    
-    .buttonSize(40px, 3px, 18px);
-        .transition(background-color, 0.2s);
-        .buttonColor(@default-background-color, @default-text-color);
-      
-        &.button-primary {
-          .buttonColor(@primary-background-color, @primary-text-color);
-        }
-        &.button-info {
-          .buttonColor(@info-background-color, @info-text-color);
-        }
-        &.button-success {
-          .buttonColor(@success-background-color, @success-text-color);
-        }
-        &.button-warning {
-          .buttonColor(@warning-background-color, @warning-text-color);
-        }
-        &.button-danger {
-          .buttonColor(@danger-background-color, @danger-text-color);
-        }
-        &.button-inverse {
-          .buttonColor(@inverse-background-color, @inverse-text-color);
-        }
-      
-        span {
-          pointer-events: none;
-        }
-      
-        &:hover {
-          text-decoration: none;
-        }
-        &:focus {
-          text-decoration: none;
-          outline: none;
-        }
-        &:active {
-          .boxShadow(~"none !important");
-        }
-      }
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
