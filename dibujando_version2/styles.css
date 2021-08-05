@@ -25,3 +25,13 @@ body{
     background-color: #4CAF50; /* Green */
     color: white;
   }
+
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 10px 10px;
+
+  }
