@@ -21,7 +21,7 @@
 				<div style="display:flex; flex-direction:column; flex-basis:100%; flex:1">
 					<div style="display:flex; flex-direction:row; flex-wrap:wrap; width:100%; align-items:center">
 						<div style="display:flex; flex-direction:column; flex-basis:100%; flex:1; align-items:center">
-							<button class="button" id="find">Buscar dispositivo</button>
+							<button class="button" id="find">Conectar</button>
 						</div>
 						<div style="display:flex; flex-direction:column; flex-basis:100%; flex:1; align-items:center">
 							<button class="button" id="disconnect">Desconectar</button>
@@ -218,7 +218,8 @@
 					const services = await microbit.getServices(device);
 					if (services.deviceInformationService) {
 						document.getElementById("find").innerHTML = "Conectado";
-						document.getElementById("find").style.color = r(76,175,80);
+						document.getElementById("find").style.color = 'white';
+						document.getElementById("find").style.background.color = 'green';
 					}
 					if (services.buttonService) {
 						services.buttonService.addEventListener("buttonastatechanged", eventHandler2);
