@@ -217,8 +217,8 @@
 				if (device) {
 					const services = await microbit.getServices(device);
 					if (services.deviceInformationService) {
-						document.getElementById("estado").innerHTML = "Conectado";
-						document.getElementById("estado").style.color = 'green';
+						document.getElementById("find").innerHTML = "Conectado";
+						document.getElementById("find").style.color = r(76,175,80);
 					}
 					if (services.buttonService) {
 						services.buttonService.addEventListener("buttonastatechanged", eventHandler2);
@@ -238,8 +238,8 @@
 				if (device.gatt.connected) {
 					device.gatt.disconnect();
 				}
-				document.getElementById("estado").innerHTML = "Desconectado";
-				document.getElementById("estado").style.color = 'red';
+				document.getElementById("find").innerHTML = "Conectar";
+				document.getElementById("find").style.color = 'white';
 			}
 		</script>
 	</body>
