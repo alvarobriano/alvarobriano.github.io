@@ -109,8 +109,8 @@
 					ctx.drawImage(img_meta, 0.86*canvasWidth, 0.01*canvasHeight, 0.09*canvasWidth, 0.16*canvasHeight);
 					document.getElementById("perder").style.color = 'white';
 					document.getElementById("perder").innerHTML = "¡Ups! Vuelve a intentarlo <br> A + B para reiniciar";
-					X = 0;
-					Y = 0;
+					X = 10;
+					Y = 10;
 					toco = 0;
 				}
 			}
@@ -220,11 +220,12 @@
 			var indice = 0;
 			var Abutton = 0;
 			var Bbutton = 0;
-			var X = 0;
-			var Y = 0;
+			var X = 10;
+			var Y = 10;
 			var toco = 0;
 			var W = 300;
 			var accel;
+
 			const eventHandler = event => dibujar(event.detail.x , event.detail.y, event.detail.z);
 			const eventHandler2 = event => actualizoA(event.detail);
 			const eventHandler3 = event => cambioColor(event.detail);
@@ -237,8 +238,8 @@
 				ctx.drawImage(img_meta, 0.86*canvasWidth, 0.01*canvasHeight, 0.09*canvasWidth, 0.16*canvasHeight);
 				document.getElementById("perder").style.color = 'white';
 				document.getElementById("perder").innerHTML = "¡Ups! Vuelve a intentarlo <br> A + B para reiniciar";
-				X = 0;
-				Y = 0;
+				X = 10;
+				Y = 10;
 				toco = 0;
 			}
 			
