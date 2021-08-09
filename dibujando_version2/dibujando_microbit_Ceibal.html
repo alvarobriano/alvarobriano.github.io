@@ -90,6 +90,13 @@
 			
 			ctx.drawImage(img, 0,0, canvasWidth, canvasHeight);
 			ctx.drawImage(img_meta, 0.86*canvasWidth, 0.01*canvasHeight, 0.09*canvasWidth, 0.16*canvasHeight);
+
+			ctx.fillStyle = Color[indice];
+			ctx.strokeStyle = Color[indice];
+			ctx.beginPath();
+			ctx.arc(30, 30, 15, 0, 2 * Math.PI, false);
+			ctx.stroke();
+			ctx.fill();
 			
 			function cambioColor(estadoB) {
 				if (estadoB == 1) {
@@ -109,6 +116,14 @@
 					ctx.drawImage(img_meta, 0.86*canvasWidth, 0.01*canvasHeight, 0.09*canvasWidth, 0.16*canvasHeight);
 					document.getElementById("perder").style.color = 'white';
 					document.getElementById("perder").innerHTML = "¡Ups! Vuelve a intentarlo <br> A + B para reiniciar";
+
+					ctx.fillStyle = Color[indice];
+					ctx.strokeStyle = Color[indice];
+					ctx.beginPath();
+					ctx.arc(30, 30, 15, 0, 2 * Math.PI, false);
+					ctx.stroke();
+					ctx.fill();
+
 					X = 30;
 					Y = 30;
 					toco = 0;
@@ -238,6 +253,14 @@
 				ctx.drawImage(img_meta, 0.86*canvasWidth, 0.01*canvasHeight, 0.09*canvasWidth, 0.16*canvasHeight);
 				document.getElementById("perder").style.color = 'white';
 				document.getElementById("perder").innerHTML = "¡Ups! Vuelve a intentarlo <br> A + B para reiniciar";
+
+				ctx.fillStyle = Color[indice];
+				ctx.strokeStyle = Color[indice];
+				ctx.beginPath();
+				ctx.arc(30, 30, 15, 0, 2 * Math.PI, false);
+				ctx.stroke();
+				ctx.fill();
+
 				X = 30;
 				Y = 30;
 				toco = 0;
