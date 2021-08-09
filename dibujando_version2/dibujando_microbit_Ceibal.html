@@ -107,6 +107,7 @@
 					ctx.clearRect(0, 0, canvas.width, canvas.height);
 					ctx.drawImage(img, 0,0, canvasWidth, canvasHeight);
 					document.getElementById("perder").style.color = 'white';
+					document.getElementById("perder").innerHTML = "¡Ups! Vuelve a intentarlo <br> A + B para reiniciar";
 					X = 0;
 					Y = 0;
 					toco = 0;
@@ -181,7 +182,7 @@
 
 					if ((Y < (0.17*canvas.height + 30)) && (X > (0.86*canvasWidth))){
 							//ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR", 0.41*canvasWidth, 0.5*canvas.height);
-							toco = 1;
+							toco = 2;
 					}
 
 					if (X > 0.6*canvas.width){
@@ -198,6 +199,11 @@
 
 					if (toco == 1) {
 						document.getElementById("perder").style.color = 'black';
+					}
+
+					if (toco == 2) {
+						document.getElementById("perder").innerHTML = "¡Felicitaciones! GANASTE";
+						document.getElementById("perder").style.color = "black"; 
 					}
 				
 					ctx.fillStyle = Color[indice];
@@ -226,7 +232,9 @@
 			document.getElementById("clear").onclick = async () => {
 				ctx.clearRect(0, 0, canvas.width, canvas.height);
 				ctx.drawImage(img, 0,0, canvasWidth, canvasHeight);
+				ctx.drawImage(img_meta, 0.86*canvasWidth, 0.01*canvasHeight, 0.09*canvasWidth, 0.16*canvasHeight);
 				document.getElementById("perder").style.color = 'white';
+				document.getElementById("perder").innerHTML = "¡Ups! Vuelve a intentarlo <br> A + B para reiniciar";
 				X = 0;
 				Y = 0;
 				toco = 0;
