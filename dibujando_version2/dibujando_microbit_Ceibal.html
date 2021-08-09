@@ -89,7 +89,7 @@
 			var ctx = canvas.getContext("2d");
 			
 			ctx.drawImage(img, 0,0, canvasWidth, canvasHeight);
-			ctx.drawImage(img_meta, 0.85*canvasWidth, 0.01*canvasHeight, 0.09*canvasWidth, 0.16*canvasHeight);
+			ctx.drawImage(img_meta, 0.86*canvasWidth, 0.01*canvasHeight, 0.09*canvasWidth, 0.16*canvasHeight);
 			
 			function cambioColor(estadoB) {
 				if (estadoB == 1) {
@@ -176,6 +176,11 @@
 
 					if ((X > (0.8*canvas.width - 30)) && (X < (0.81*canvas.width + 30)) && (Y < (0.71*canvas.height + 30))){
 						//ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR", 0.41*canvasWidth, 0.5*canvas.height);
+							toco = 1;
+					}
+
+					if ((Y < (0.17*canvas.height + 30))){
+							//ctx.fillText("¡QUÉ LÁSTIMA! PRESIONA REINICIAR", 0.41*canvasWidth, 0.5*canvas.height);
 							toco = 1;
 					}
 
