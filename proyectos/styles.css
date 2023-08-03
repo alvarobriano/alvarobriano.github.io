@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(60, 91, 91);
+}
+
+* {
+    background-color:beige;
+    font-family: Helvetica;
+}
+
+img {
+    border-radius: 10px;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(60, 91, 91);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

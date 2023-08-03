@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.fondito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.fondito h1 {
+    font-size: 300%;
+}
+
+.ajuste_nav_fondito {
+    margin-left: -390px;
+    margin-top: 140px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    border-style:inherit;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.experiencia_prof {
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
+.experiencia_prof img {
+    max-width: 100%; /* Establecer un ancho máximo para la imagen */
+    height: auto; /* Asegurarse de que la imagen se ajuste proporcionalmente */
+}
+
+.columna {
+    overflow:hidden;
+    float: left;
+    width: 30%; /* Ajustar el ancho de las columnas */
+    box-sizing: border-box; /* Incluir el padding en el ancho */
+    padding: 10px;
+}
+
+.contacto {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 120%;
+}
+
+.trayectoria_ed {
+    margin-left: 15%;
+    margin-right: 40%;
+    text-align: justify;
+}
+
+.trayectoria_ed h2 {
+    clear: left;
+    margin-top: 20px;
+}
+
+.trayectoria_ed img {
+    width: 150px; /* Ajusta el porcentaje según tus necesidades */
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 110%;
+}
+  
+.boton:hover {
+    color: #ff0000;
+}
